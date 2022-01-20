@@ -21,3 +21,13 @@ console.log(x)
 
 const type = typeof x;
 console.log(type);
+
+// HW
+
+let books = 5;
+books = 7;
+
+let apples = 4
+let pears = 3
+
+let fruits = apples + pears

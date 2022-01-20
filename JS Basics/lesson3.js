@@ -10,3 +10,11 @@ const message = `
 
 // Замість змінних і виразів підставляться їхні значення
 console.log(message);
+
+// HW
+
+const brand = 'Toyota'
+const price = 22500
+const isSedan = true
+const wings = undefined
+const owner = null
