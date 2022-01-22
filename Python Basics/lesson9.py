@@ -45,13 +45,3 @@ def parity_checker() -> None:
         print("Even")
     else:
         print("Odd")
-
-def get_success_rate(statistics: str) -> int:
-    good = 0
-    for i in range(len(statistics)):
-        if(statistics[i] == '1'):
-            good += 1
-
-    if(good == 0):
-        return 0
-    return round(good*100/len(statistics))
