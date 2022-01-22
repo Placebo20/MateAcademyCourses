@@ -83,6 +83,28 @@
   }
 
 /**
+ * @param {string} target
+ *
+ * @returns {boolean}
+ */
+ function isWerewolf(target) {
+  let direct = "";
+  let reversed = "";
+  for(let word of target){
+    if(word.match(/[a-z]/i)){
+      direct += word.toLocaleLowerCase();
+      reversed = word.toLocaleLowerCase() + reversed;
+    }
+  }
+  if(direct === reversed){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+/**
  * @param {string} statistic
  *
  * @returns {number}
