@@ -104,25 +104,3 @@ public class CompareStrings {
     // write your code above this line
   }
 }
-
-public class GetMiddleCharacter {
-  public static String getMiddleString(String originalString) {
-    // write your code below this line
-    StringBuilder result = new StringBuilder();
-    char[] charArray = originalString.toCharArray();
-    if(charArray.length != 0){
-      if(charArray.length % 2 == 0){
-        for(int i = charArray.length/2 - 1; i < charArray.length; i++){
-          result.append(charArray[i]);
-          result.append(charArray[i+1]);
-          return result.toString();
-        }
-      } else {
-        result.append(charArray[charArray.length/2]);
-        return result.toString();
-      }
-    }
-    return "";
-    // write your code above this line
-  }
-}
